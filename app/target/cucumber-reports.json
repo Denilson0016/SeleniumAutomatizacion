@@ -1,0 +1,123 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "As a customer when i search for Alexa, i want to see id the third option on the second page is avaliable for purchase and can be added to the cart.",
+        "description": "",
+        "id": "test-amazon-search-functionality;as-a-customer-when-i-search-for-alexa--i-want-to-see-id-the-third-option-on-the-second-page-is-avaliable-for-purchase-and-can-be-added-to-the-cart.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 750300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3649327800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user navigates to www.amazon.com",
+            "match": {
+              "location": "AmazonSearchSteps.navigateToAmazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3121025000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Searches for playstation",
+            "match": {
+              "arguments": [
+                {
+                  "val": "playstation",
+                  "offset": 13
+                }
+              ],
+              "location": "AmazonSearchSteps.enterSearchCriteria(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 368708500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "navigates to the page number 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 29
+                }
+              ],
+              "location": "AmazonSearchSteps.navigateToSecondPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4463656500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "selects the third item",
+            "match": {
+              "location": "AmazonSearchSteps.selectsThirdItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2624932200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user is able to add it to the cart",
+            "match": {
+              "location": "AmazonSearchSteps.itemCanBeAddedToTheCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@Cart"
+          }
+        ]
+      }
+    ],
+    "name": "Test Amazon search functionality",
+    "description": "",
+    "id": "test-amazon-search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/AmazonSearch.feature",
+    "tags": [
+      {
+        "name": "@Amazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
